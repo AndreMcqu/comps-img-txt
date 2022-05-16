@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
-import Picture from './compo/pictxt';
+
+import { StyleSheet, View, } from 'react-native';
+import TextAndImage from './compo/pictxt'
 
 export default function App() {
+    let picVar = require("./assets/rover.jpg");
     return (
         <View style={styles.container}>
-            <Picture/>
+            <TextAndImage pic={picVar} label='I used props'/>
         </View>
     );
 }
